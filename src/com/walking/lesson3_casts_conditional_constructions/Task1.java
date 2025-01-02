@@ -1,5 +1,8 @@
 package com.walking.lesson3_casts_conditional_constructions;
 
+import java.io.FilterOutputStream;
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры два целых числа. Если Число1 четное,
  * вывести произведение двух чисел(пр.1) если нет - частное(пр.2).
@@ -17,5 +20,25 @@ package com.walking.lesson3_casts_conditional_constructions;
  */
 public class Task1 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter integer a: ");
+        int a = scanner.nextInt();
+
+        System.out.println("Enter integer b: ");
+        int b = scanner.nextInt();
+
+        scanner.close();
+
+        if (a % 2 == 0) {
+            System.out.println(a * b);
+        } else {
+            double result = (double) a / b;
+            System.out.printf("%.1f\n", result);
+        }
+
+        if (a == b) {
+            System.out.println("The numbers are equal!");
+        }
     }
 }
