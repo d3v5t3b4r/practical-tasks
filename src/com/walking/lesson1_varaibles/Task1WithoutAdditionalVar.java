@@ -6,5 +6,12 @@ package com.walking.lesson1_varaibles;
  */
 public class Task1WithoutAdditionalVar {
     public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+
+        b =  b - a;
+        a = a + a;
+
+        System.out.println("a = " + a + "\nb = " + b);
     }
 }
