@@ -5,5 +5,8 @@ package com.walking.lesson1_varaibles;
  */
 public class Task2String {
     public static void main(String[] args) {
+        String name = "Jack";
+
+        System.out.println(name);
     }
 }
